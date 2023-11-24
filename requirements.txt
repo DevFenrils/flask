@@ -2,4 +2,3 @@ flask
 pytorch
 pillow
 numpy
-opencv
