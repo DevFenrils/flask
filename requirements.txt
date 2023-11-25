@@ -2,3 +2,4 @@ flask
 torch
 pillow
 numpy
+gunicorn==20.0.4
