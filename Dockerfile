@@ -10,4 +10,4 @@ RUN pip install opencv-python
 RUN pip install -r requirements.txt
 #RUN pip install --upgrade diffusers accelerate transformers
 # Comando para ejecutar la aplicación cuando se inicie el contenedor
-CMD ["gunicorn", "app:app"]
+CMD ["python", "app.py"]
