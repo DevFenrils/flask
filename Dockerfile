@@ -6,9 +6,12 @@ COPY requirements.txt .
 COPY app.py .
 COPY image_utilities.py .
 COPY models.py .
-COPY templates .
-COPY nn .
-COPY static .
+COPY /templates /templates/
+COPY /nn /nn/
+COPY /static /static/
+RUN ls -la /nn/*
+RUN ls -la /static/*
+RUN ls -la /templates/*
 RUN apt-get update && apt-get install -y libgl1-mesa-glx
 RUN apt-get update && apt-get install -y libglib2.0-0
 RUN pip install opencv-python
