@@ -4,7 +4,7 @@ FROM python:3.10-slim-buster
 # Establece el directorio de trabajo en /app
 COPY requirements.txt .
 COPY app.py .
-COPY image_utilities .
+COPY image_utilities.py .
 COPY models.py .
 COPY templates .
 COPY nn .
