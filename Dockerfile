@@ -9,7 +9,6 @@ COPY models.py .
 COPY templates .
 COPY nn .
 COPY static .
-COPY __pycache__ .
 RUN apt-get update && apt-get install -y libgl1-mesa-glx
 RUN apt-get update && apt-get install -y libglib2.0-0
 RUN pip install opencv-python
